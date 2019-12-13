@@ -51,8 +51,10 @@
             <ul class="dropdown-menu">
                 <li><a href="{{ url('/jenis') }}">Jenis</a></li>
                 <li><a href="{{ url('/pengajuanusaha') }}">Pengajuan Usaha</a></li>
-                <li><a href="{{ url('/jenis') }}">Komoditas</a></li>
-                <li><a href="{{ url('/jenis') }}">Investasi</a></li>
+                <li><a href="{{ url('/validasi') }}">Validasi</a></li>
+                <li><a href="{{ url('/modal') }}">Modal</a></li>
+                <li><a href="{{ url('/usahaku') }}">Usaha</a></li>
+                
             </ul>
         </li>
 

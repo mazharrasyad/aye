@@ -1,12 +1,13 @@
 @extends('master')
 @section('content')
 
+<div class="main main-raised mt-4">
+    <div class="container">
 
+        <h3>Validasi</h3>
 
-      	<a href="{{url('/createvalidasi')}}" class="btn btn-success">Create</a>
-
-	<table class="table">
-  <thead class="thead-dark">
+	<table class="table mt-4">
+  <thead class="">
     <tr>
       <th scope="col">No</th>
       <th scope="col">Legalitas</th>
@@ -59,6 +60,8 @@
   </tbody>
 </table>
 
+    </div>
+</div>
 
 
 @endsection

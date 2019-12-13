@@ -2,7 +2,10 @@
 @section('content')
 
 
-
+<div class="main main-raised mt-4">
+    <div class="container">
+  
+      <h3 class="mt-4">Usaha</h3>
 
    <form action="/createusaha" method="POST" enctype="multipart/form-data">
                       {{csrf_field()}}
@@ -11,7 +14,7 @@
                         <label for="name">Name</label>
                         <input type="text" class="form-control" name="nama" placeholder="Masukan nama Usaha" value="">
                       </div>
-                      <div class="form-group">
+                      <div >
                         <label for="name">Foto</label>
                         <input type="file" class="form-control" name="foto" value="">
                       </div>
@@ -19,12 +22,12 @@
 
                       <div class="form-group">
                        
-                        <label for="jenis">hargamodal</label>
+                        <label for="jenis">Modal Usaha</label>
                           <select name="modal_id" class="form-control">
 
-                              <option value="">Pilih na,a validasi</option>
+                              <option value="" disabled>Pilih nama modal</option>
                               @foreach($modal as $modalku)
-                              <option value="{{$modalku->id}}">{{$modalku->id}}</option>
+                              <option value="{{$modalku->id}}">{{$modalku->jumlahsaham}}</option>
                               @endforeach
                           </select>
                         
@@ -36,6 +39,7 @@
                             <button type="submit" class="btn btn-primary">Save changes</button>
                           </div>
                     </form>
-
+    </div>
+</div>
 
 @endsection

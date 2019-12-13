@@ -6,7 +6,7 @@
   
       <h3 class="mt-4">Pengajuan Usaha</h3>
 
-                                    <form action="/createpengajuanusaha" method="POST" enctype="multipart/form-data">
+                      <form action="/createpengajuanusaha" method="POST" enctype="multipart/form-data">
                       {{csrf_field()}}
 
                       <div class="form-group">
@@ -21,7 +21,7 @@
                         <label for="jenis">Jenis</label>
                           <select name="jenis_id" class="form-control">
 
-                              <option value="">Pilih Jenis</option>
+                              <option value="" disabled>Pilih Jenis</option>
                               @foreach($jenis as $jenis)
                               <label>pengajuan usaha</label>
                               <option value="{{$jenis->id}}">{{$jenis->nama}}</option>
@@ -33,27 +33,33 @@
 
                       <div class="form-group">
                         <label for="name">Deskripsi</label>
-                        <textarea name="deskripsi"></textarea>
+                        <textarea class="col-md-12" name="deskripsi"></textarea>
                       </div>
 
                       <div class="form-group">
                         <label for="name">Alamat</label>
-                        <textarea name="alamat"></textarea>
+                        <textarea class="col-md-12" name="alamat"></textarea>
                       </div>
 
-                      <div class="form-group">
+                      <div>
                         <label for="name">Foto Usaha</label>
-                        <input type="file" name="foto" value="">
+                            <input type="file" name="foto" />
                       </div>
 
-                      <div class="form-group">
-                        <label for="name">Budget</label>
-                        <input type="text" class="form-control" name="budget" placeholder="Masukan budget..." value="">
+                      <div class="form-group mt-4">
+                        <label for="name">Pengajuan Modal</label>
+                        <input type="text" class="form-control" name="budget" value="">
                       </div>
 
                       <div class="form-group">
                         <label for="name">Durasi</label>
-                        <input type="text" class="form-control" name="durasi" placeholder="Masukan durasi..." value="">
+                        <select class="form-control" name="durasi" id="durasi">
+                          <option value="" disabled>Pilih Durasi</option>
+                          <option value="3">3 Bulan</option>
+                          <option value="3">6 Bulan</option>
+                          <option value="3">9 Bulan</option>
+                          <option value="3">12 Bulan</option>
+                        </select>
                       </div>
 
 
@@ -61,7 +67,7 @@
                        
                         <label for="jenis">User</label>
                           <select name="user_id" class="form-control">
-                              <option value="">Pilih Category</option>
+                              <option value="" disabled>Pilih User</option>
                               @foreach($user as $users)
                               <label>pengajuan usaha</label>                              
                               <option value="{{$users->id}}">{{$users->name}}</option>
