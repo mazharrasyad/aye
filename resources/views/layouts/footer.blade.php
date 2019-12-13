@@ -1,3 +1,65 @@
+    <div class="alert alert-info pt-4" id="kontak">
+    <div class="container">
+            <div id="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <h2>U-VEST</h2>
+                                <br>
+                                Ini deskripsi...
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h4>Link Terkait</h4>
+                                        <ul class="footer-links" style="width: 80%">
+                                            <li><a href="">FAQ</a></li>
+                                            <li><a href="">Kebijakan &amp; Privasi</a></li>
+                                            <li><a href="">Ketentuan Penggunaan</a></li>
+                                        </ul>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4>Alamat</h4>
+                                        <div class="text-widget">
+                                            <table>
+                                                <tbody><tr>
+                                                    <td style="vertical-align: top"><i class="fa fa-home"></i></td>
+                                                    <td width="5%"></td>
+                                                    <td>
+                                                        STT Terpadu Nurul Fikri <br>
+                                                        Jakarta Selatan <br>Jl. Lenteng Agung
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-phone"></i></td>
+                                                    <td width="5%"></td>
+                                                    <td>+62 821 2345 6789</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-envelope-o"></i></td>
+                                                    <td width="5%"></td>
+                                                    <td>uvest@gmail.com</a></td>
+                                                </tr>
+                                            </tbody></table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyrights text-center">
+                                    <br><br>
+                                        © <script>document.write(new Date().getFullYear())</script> All Rights Reserved. Powered by AYE</a>
+                                </div>
+                            </div>
+                        </div>                
+                    </div>                
+                </div>
+    </div>
+    </div>
+    
     <!--   Core JS Files   -->
     <script src="{{ asset('assets/js/core/jquery.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('assets/js/core/popper.min.js') }}" type="text/javascript"></script>

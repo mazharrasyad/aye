@@ -1,5 +1,6 @@
-@include('layouts.header')
+@extends('master')
 
-@include('layouts.navbar')
-
-@include('layouts.footer')
+@section('content')
+    @include('layouts.banner')
+    @include('layouts.main')
+@endsection
