@@ -42,3 +42,16 @@ Route::get('validate/budget/{id}','ValidasiController@statusbudget');
 Route::delete('/validasi/{id}/delete','ValidasiController@delete');
 
 
+
+Route::get('/modal','ModalController@index');
+Route::get('/createmodal','ModalController@create');
+Route::post('/createmodal','ModalController@createmodal');
+
+Route::delete('/modal/{id}/delete','ModalController@delete');
+
+
+Route::get('/usahaku','UsahaController@index');
+Route::get('/createusaha','UsahaController@create');
+Route::post('/createusaha','UsahaController@createusaha');
+
+Route::delete('/usaha/{id}/delete','UsahaController@delete');
