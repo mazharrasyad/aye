@@ -25,4 +25,20 @@ Route::post('/registerinvestor','AuthController@registinvestor')->name('register
 Route::get('/jenis','JenisController@index');
 Route::get('/createjenis','JenisController@create');
 Route::post('/createjenis','JenisController@createjenis');
+Route::delete('/jenis/{id}/delete','JenisController@delete');
+
+
+Route::get('/pengajuanusaha','PengajuanusahaController@index');
+Route::get('/createpengajuanusaha','PengajuanusahaController@create');
+Route::post('/createpengajuanusaha','PengajuanusahaController@createpengajuanusaha');
+Route::delete('/pengajuanusaha/{id}/delete','PengajuanusahaController@delete');
+
+
+
+Route::get('/validasi','ValidasiController@index');
+Route::get('validate/legalitas/{id}','ValidasiController@statuslegal');
+Route::get('validate/prospek/{id}','ValidasiController@statusprospek');
+Route::get('validate/budget/{id}','ValidasiController@statusbudget');
+Route::delete('/validasi/{id}/delete','ValidasiController@delete');
+
 
