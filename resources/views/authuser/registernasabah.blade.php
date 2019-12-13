@@ -9,7 +9,7 @@
                 <h3 class="panel-heading">Register</h3>
 
                 <div class="panel-body mt-4">
-                    <form class="form-horizontal" method="POST" action="{{ route('registerinvestor') }}">
+                    <form class="form-horizontal" method="POST" action="{{ route('registernasabah') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -56,7 +56,7 @@
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                        
-                                <input id="role" type="hidden" class="form-control" name="role" value="investor" required autofocus>
+                                <input id="role" type="hidden" class="form-control" name="role" value="nasabah" required autofocus>
 
                                 @if ($errors->has('role'))
                                     <span class="help-block">
