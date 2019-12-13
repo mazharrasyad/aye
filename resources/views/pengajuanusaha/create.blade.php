@@ -1,16 +1,17 @@
 @extends('master')
 @section('content')
 
-
-
-        <a href="{{url('/createpengajuanusaha')}}" class="btn btn-success">Create</a>
+<div class="main main-raised mt-4">
+    <div class="container">
+  
+      <h3 class="mt-4">Pengajuan Usaha</h3>
 
                                     <form action="/createpengajuanusaha" method="POST" enctype="multipart/form-data">
                       {{csrf_field()}}
 
                       <div class="form-group">
-                        <label for="name">Nama</label>
-                        <input type="text" class="form-control" name="nama" placeholder="Masukan nama pengajuan usaha" value="">
+                        <label for="name">Nama Pengajuan Usaha</label>
+                        <input type="text" class="form-control" name="nama" value="">
                       </div>
 
 
@@ -41,8 +42,8 @@
                       </div>
 
                       <div class="form-group">
-                        <label for="name">Nama</label>
-                        <input type="file" class="form-control" name="foto"  value="">
+                        <label for="name">Foto Usaha</label>
+                        <input type="file" name="foto" value="">
                       </div>
 
                       <div class="form-group">
@@ -60,9 +61,9 @@
                        
                         <label for="jenis">User</label>
                           <select name="user_id" class="form-control">
+                              <option value="">Pilih Category</option>
                               @foreach($user as $users)
-                              <label>pengajuan usaha</label>
-                              <option value="">Pilih Category</option>}
+                              <label>pengajuan usaha</label>                              
                               <option value="{{$users->id}}">{{$users->name}}</option>
                               @endforeach
                           </select>
@@ -78,6 +79,7 @@
                           </div>
                     </form>
 
-
+                  </div>
+                </div>
 
 @endsection

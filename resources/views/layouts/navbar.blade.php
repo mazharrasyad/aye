@@ -44,16 +44,16 @@
             @endguest
         </li>
 
-        <li class="nav-item">
-            <a href="#kontak" class="nav-link">
-                Komoditas
+        <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
+                Menu <span class="caret"></span>
             </a>
-        </li>
-
-        <li class="nav-item">
-            <a href="#kontak" class="nav-link">
-                Investasi
-            </a>
+            <ul class="dropdown-menu">
+                <li><a href="{{ url('/jenis') }}">Jenis</a></li>
+                <li><a href="{{ url('/pengajuanusaha') }}">Pengajuan Usaha</a></li>
+                <li><a href="{{ url('/jenis') }}">Komoditas</a></li>
+                <li><a href="{{ url('/jenis') }}">Investasi</a></li>
+            </ul>
         </li>
 
         <li class="nav-item">
