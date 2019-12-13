@@ -9,4 +9,11 @@ class Modal extends Model
     //
     protected $table ='modal';
     protected $fillable = ['validasi_id','budget','hargasaham','jumlahsaham','sisasaham','durasisaham','roi'];
+
+    public function usaha()
+    {
+        return $this->hasMany('App\Usaha');
+            
+    }
+
 }

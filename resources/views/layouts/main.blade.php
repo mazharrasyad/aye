@@ -53,12 +53,15 @@
         </div>
 
         <div class="row mb-4">
+        <?php $count = 0; ?>               
 
+@foreach($usaha as $usahanya)
+        {{$count++}}
         <div class="col-md-6">
             <div class="card">
                 <div class="card-header card-header-text card-header-primary">
                     <div class="card-text">
-                    <h4 class="card-title">Here is the Text</h4>
+                    <h4 class="card-title">{{$usahanya->nama}}</h4>
                     </div>
                 </div>
                 <div class="card-body">
@@ -66,43 +69,8 @@
                 </div>
             </div>
         </div>
-
-        <div class="col-md-6">
-                <div class="card">
-                    <div class="card-header card-header-text card-header-primary">
-                        <div class="card-text">
-                        <h4 class="card-title">Here is the Text</h4>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona...
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header card-header-text card-header-primary">
-                            <div class="card-text">
-                            <h4 class="card-title">Here is the Text</h4>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona...
-                        </div>
-                    </div>
-                </div>
-
-        <div class="col-md-6">
-        <div class="card">
-            <div class="card-header card-header-text card-header-primary">
-                <div class="card-text">
-                <h4 class="card-title">Here is the Text</h4>
-                </div>
-            </div>
-            <div class="card-body">
-                The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona...
-            </div>
+@endforeach
+        
         </div>
         </div>
 

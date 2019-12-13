@@ -13,7 +13,12 @@
       <th scope="col">Nama Usaha</th>
 
       <th scope="col">Foto</th>
-      <th scope="col">Modal Usaha</th>
+      <th scope="col">Jumlah saham</th>
+       <th scope="col">Harga saham</th>
+       <th scope="col">Sisa Saham saham</th>
+      <th scope="col">Durasi </th>
+     <th scope="col">R O I  </th>
+     
       <th scope="col">Action</th>
     </tr>
   </thead>
@@ -24,7 +29,12 @@
       <td>{{$usahanya->nama}}</td>
         <td><img src="{{asset('usaha/'.$usahanya->foto)}}" widht="100px" height="100px" alt=""></td>
       
-      <td>{{$usahanya->modal_id}}</td>
+      <td>{{$usahanya->modal['jumlahsaham']}}</td>
+
+      <td>{{$usahanya->modal['hargasaham']}}</td>
+      <td>{{$usahanya->modal['sisasaham']}}</td>
+      <td>{{$usahanya->modal['durasijual']}}</td>
+      <td>{{$usahanya->modal['roi']}}</td>
       <td>
       	<a href="" class="btn btn-success">update</a>
 

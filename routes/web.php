@@ -10,9 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+use App\Usaha;
 Route::get('/', function () {
-    return view('welcome');
+    $usaha = Usaha::all();
+    return view('welcome',compact('usaha'));
 });
 
 Auth::routes();

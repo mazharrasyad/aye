@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Usaha;
 class HomeController extends Controller
 {
     /**
@@ -23,6 +23,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('welcome');
+        $usaha = Usaha::all();
+        return view('welcome',compact('usaha'));
+    }
+    public function welcome()
+    {
+              $usaha = Usaha::all();
+        return view('welcome',compact('usaha'));
+        
     }
 }
