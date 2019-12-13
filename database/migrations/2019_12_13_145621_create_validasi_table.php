@@ -15,9 +15,9 @@ class CreateValidasiTable extends Migration
     {
         Schema::create('validasi', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('legalitas');
-            $table->string('prospek');
-            $table->string('budget');
+            $table->enum('legalitas',['0','1'])->default('0');
+            $table->enum('prospek',['0','1'])->default('0');
+            $table->enum('budget',['0','1'])->default('0');
             $table->unsignedInteger('pengajuanusaha_id')->nullable();
             $table->foreign('pengajuanusaha_id')
                 ->on('pengajuanusaha')

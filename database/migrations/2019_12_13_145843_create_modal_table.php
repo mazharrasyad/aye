@@ -21,12 +21,12 @@ class CreateModalTable extends Migration
                 ->references('id')
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
-            $table->string('budget');
-            $table->string('jumlahsaham');
-            $table->string('hargasaham');  
-            $table->string('sisasaham');
-            $table->string('durasijual');
-            $table->string('roi');
+            $table->double('budget');
+            $table->integer('jumlahsaham');
+            $table->double('hargasaham');  
+            $table->integer('sisasaham');
+            $table->integer('durasijual');
+            $table->integer('roi');
             $table->timestamps();
         });
     }

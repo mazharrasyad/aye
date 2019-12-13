@@ -20,3 +20,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/registerinvestor','AuthController@registerinvestor');
 Route::post('/registerinvestor','AuthController@registinvestor')->name('registerinvestor');
+
+
+Route::get('/jenis','JenisController@index');
+Route::get('/createjenis','JenisController@create');
+Route::post('/createjenis','JenisController@createjenis');
+

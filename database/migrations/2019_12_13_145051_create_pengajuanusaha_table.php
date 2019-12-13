@@ -23,11 +23,11 @@ class CreatePengajuanusahaTable extends Migration
                 ->references('id')
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
-            $table->string('deskripsi');
-            $table->string('alamat');
+            $table->text('deskripsi');
+            $table->text('alamat');
             $table->string('foto');
-            $table->string('budget');
-            $table->string('durasi');
+            $table->double('budget');
+            $table->integer('durasi');
             $table->unsignedInteger('user_id')->nullable();
             $table->foreign('user_id')
                 ->on('users')
