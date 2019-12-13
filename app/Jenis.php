@@ -9,4 +9,11 @@ class Jenis extends Model
     //
     protected $table = 'jenis';
     protected $fillable = ['nama'];
+
+
+    public function pengajuanusaha()
+    {
+        return $this->hasMany('App\Pengajuanusaha');
+            
+    }
 }

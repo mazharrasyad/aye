@@ -29,4 +29,14 @@ class JenisController extends Controller
     	return redirect('/jenis');
         	
     }
+
+    public function delete($id)
+    {
+    	$jenisnya = Jenis::find($id);
+    	$jenisnya->delete();
+    	return redirect('/jenis');
+        	
+    
+
+    }
 }
