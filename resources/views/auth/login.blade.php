@@ -1,13 +1,15 @@
-@extends('layouts.app')
+@extends('master')
 
 @section('content')
+<div class="main main-raised mt-auto mb-auto">
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-12">
             <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
+                <h3 class="panel-heading mt-4">Login</h3>
 
-                <div class="panel-body">
+                <div class="panel-body mt-4 mb-4">
+
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
 
@@ -56,6 +58,10 @@
                                 </button>
 
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    Register
+                                </a>
+
+                                <a class="btn btn-link" href="{{ route('password.request') }}">
                                     Forgot Your Password?
                                 </a>
                             </div>
@@ -65,5 +71,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 @endsection
