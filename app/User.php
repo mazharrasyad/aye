@@ -29,8 +29,11 @@ class User extends Authenticatable
 
     public function pengajuanusaha()
     {
-        return $this->hasMany('App\Pengajuanusaha');
-            
+        return $this->hasMany('App\Pengajuanusaha');      
     }
 
+    public function transaksi()
+    {
+        return $this->hasMany('App\Transaksi');      
+    }
 }

@@ -51,3 +51,5 @@ Route::get('/createusaha','UsahaController@create');
 Route::post('/createusaha','UsahaController@createusaha');
 
 Route::delete('/usaha/{id}/delete','UsahaController@delete');
+
+Route::resource('transaksi', 'TransaksiController');

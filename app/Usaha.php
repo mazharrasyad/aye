@@ -12,8 +12,11 @@ class Usaha extends Model
 
     public function modal()
     {
-    	   return $this->belongsTo('App\Modal');
-  
+    	   return $this->belongsTo('App\Modal');  
     }
 
+    public function transaksi()
+    {
+        return $this->hasMany('App\Transaksi');      
+    }
 }

@@ -44,6 +44,12 @@
             @endguest
         </li>
 
+        <li class="nav-item">
+            <a href="{{ url('/transaksi') }}" class="nav-link">
+                Investasi
+            </a>
+        </li>
+
         <li class="dropdown nav-item">
             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
                 Menu <span class="caret"></span>

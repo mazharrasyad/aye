@@ -70,6 +70,8 @@
                     </div>
                 </div>
                 <div class="card-body">
+                <img src="{{asset('/usaha/'.$usahanya->foto )}}" width="100px" height="200px" alt="">
+                <br>
                		Jumlah saham : {{$usahanya->modal['jumlahsaham']}}
                		<br>
                		Harga saham : {{$usahanya->modal['hargasaham']}}
